@@ -1,0 +1,7 @@
+
+# null hypothesis = there is no statistical differecen between the means NT-proBNP levels at Week 4 between the two groups
+# alternative hypothesis = there is statistical differecen between the means NT-proBNP levels at Week 4 between the two groups
+
+
+stats.ttest_ind(df_newsv['Week 4 NT-proBNP (pg/mL)'], df_newsv['Week 4 NT-proBNP (pg/mL)'], alternative = 'greater', equal_var=True)
+# beacuse the p value is 1, we must accept the null

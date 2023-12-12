@@ -1,0 +1,7 @@
+
+# null hypothesis = there is no statstical difference between the means of NT-proBNP levels at Week 4 between the two groups for patients over the age of 60
+# alternative hypothesis = there is statstical difference between the means of NT-proBNP levels at Week 4 between the two groups for patients over the age of 60
+# becasue the lengths of the sample groups are different we must used the Welch's two tailed t test
+
+stats.ttest_ind(df_newsv60['Week 8 NT-proBNP (pg/mL)'], df_newe60['Week 8 NT-proBNP (pg/mL)'], alternative = 'greater', equal_var=True)
+# becasue the p value is 1, we must accept the null

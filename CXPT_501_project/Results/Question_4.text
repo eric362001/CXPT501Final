@@ -1,0 +1,6 @@
+
+# null hypothesis = there is no statistical differecen between the mean of the pre-treatment and Week 4 NT-proBNP levels in the enalapril group
+# alternative hypothesis = there is statistical differecen between the mean of the pre-treatment and Week 4 NT-proBNP levels in the enalapril group
+
+stats.ttest_rel(df_newe['Pre-treatment NT-proBNP (pg/mL)'], df_newe['Week 4 NT-proBNP (pg/mL)'])
+# becasue the p value is so small, we must reject the null in favor of the alternative
